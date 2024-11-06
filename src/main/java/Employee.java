@@ -1,11 +1,11 @@
 public class Employee {
 
-    private String name;
-    private String title;
-    private String email;
-    private String phoneNumber;
-    private int salary;
-    private int age;
+    private final String name;
+    private final String title;
+    private final String email;
+    private final String phoneNumber;
+    private final int salary;
+    private final int age;
 
     public Employee(String name, String title, String email, String phoneNumber, int salary, int age) {
         this.name = name;
@@ -50,11 +50,14 @@ public class Employee {
         System.out.println(attraction1.getName()
                 + "\t" + attraction1.getTime()
                 + "\t" + attraction1.getCost());
+
         System.out.println(attraction2.getName()
                 + "\t" + attraction2.getTime()
                 + "\t" + attraction2.getCost());
+
         System.out.println(attraction3.getName()
                 + "\t" + attraction3.getTime()
                 + "\t" + attraction3.getCost());
+
     }
 }

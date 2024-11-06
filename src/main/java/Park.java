@@ -1,9 +1,10 @@
 public class Park {
+   // String workingTime;
 
     public static class Attractions {
-        private String name;
-        private String time;
-        private int cost;
+        private final String name;
+        private final String time;
+        private final int cost;
 
         public Attractions(String name, String time, int coast) { // конструктор класса Attractions
             this.name = name;
