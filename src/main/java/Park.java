@@ -1,7 +1,18 @@
 public class Park {
-   // String workingTime;
+    final private String namepark;
+    final private String workingTime;
 
-    public static class Attractions {
+    public Park(String namepark, String workingTime) {
+        this.namepark = namepark;
+        this.workingTime = workingTime;
+    }
+
+    public void startWorking() {
+        System.out.println("Welcome to the attractions Park!!! \n");
+        System.out.println(this.namepark + " opening hours " + this.workingTime + "\n\n");
+    }
+
+    public class Attractions {
         private final String name;
         private final String time;
         private final int cost;
@@ -12,16 +23,9 @@ public class Park {
             this.cost = coast;
         }
 
-        public String getName() {
-            return name;
-        }
-
-        public String getTime() {
-            return time;
-        }
-
-        public int getCost() {
-            return cost;
+        public void infoAttraction() { // метод вызова информации об аттракционах
+            System.out.println(" Attraction: " + "\t" + " opening hours: " + "\t" + " Cost " + "\t" + "\n");
+            System.out.println(this.name + "\t" + this.time + "\t" + this.cost + "\t" + "\n\n");
         }
     }
 }
