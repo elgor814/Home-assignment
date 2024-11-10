@@ -1,13 +1,13 @@
 public class Dog extends Animal {
     public static int dogCount = 0;
 
-    public Dog(String name, int age) { //конструктор для котиков
+    public Dog(String name, int age) { //конструктор для псов
         super(name, age);
         dogCount++;
     }
 
     public void dogInfo() {
-        if(age<=25) {
+        if (age <= 25) {
             System.out.println("Пёс " + name + "\t" + "возраст: " + age + "\n");
         }
     }
@@ -19,7 +19,7 @@ public class Dog extends Animal {
 
     public void run(int l) {
         if (l > 0 && l <= 500) {
-            System.out.println("Пёс " + name + " пробегает " + l + " метров."); //+ l + "метров");
+            System.out.println("Пёс " + name + " пробегает " + l + " метров.");
         } else if (l < 0) {
             System.out.println("Некорректное значение! Пока значение такое - пёс не побежит!");
         } else if (l > 200) {
@@ -27,6 +27,7 @@ public class Dog extends Animal {
         }
     }
 
+    @Override
     public void swim(int l) {
         if (l > 0 && l <= 10) {
             System.out.println("Пёс " + name + " проплывает " + l + " метров.");
@@ -40,7 +41,6 @@ public class Dog extends Animal {
     public static int getDogCount() {
         return dogCount;
     }
-
 }
 
 

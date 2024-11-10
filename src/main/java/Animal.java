@@ -1,8 +1,7 @@
-public class Animal {
-    String name;
-    int l; // длина препятствия, в метрах
-    int age;
-   private static int count = 0;
+public abstract class Animal {
+    protected String name;
+    protected int age;
+    private static int count = 0;
 
     public Animal(String name, int age) {
         this.name = name;
@@ -10,8 +9,8 @@ public class Animal {
         count++;
     }
 
-    public void animalInfo() {
-        System.out.println("Животное " + name + " возраст: " + age + "\n");
+    public String getName() {
+        return name;
     }
 
     public void run(int l) {
@@ -29,5 +28,4 @@ public class Animal {
     public static int getAnimalCount() {
         return count;
     }
-
 }
