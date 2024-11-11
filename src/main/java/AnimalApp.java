@@ -57,5 +57,26 @@ public class AnimalApp {
         System.out.println("\nКоличество котов: " + Cat.getCatCount());
         System.out.println("Количество псов: " + Dog.getDogCount());
         System.out.println("Количество всех созданных животных: " + Animal.getAnimalCount());
+
+
+        System.out.println("\n\t Задание 2. Площади и периметры ");
+
+        Circle circle = new Circle(3.0, "Red", "Blue");
+        System.out.println("КРУГ:\n"+"Периметр круга:\t " + circle.getPerimeter() +"\nПлощадь круга: \t" + circle.getArea()+ "\nЦвет фигуры: \t" +circle.getColor()+"\nЦвет границы фигуры: \t"+ circle.getBorderColor()+"\n");
+        //System.out.println("Площадь круга: " + circle.getArea());
+
+        Rectangle rectangle = new Rectangle(2, 3, "White", "Pink");
+        System.out.println("ПРЯМОУГОЛЬНИК:\n"+"Периметр прямоугольника:\t " + rectangle.getPerimeter() +"\nПлощадь прямоугольника: \t" + rectangle.getArea()+ "\nЦвет фигуры: \t" +rectangle.getColor()+"\nЦвет границы фигуры: \t"+ rectangle.getBorderColor()+"\n");
+
+
+
+        Triangle triangle = new Triangle(3.0, 4.0, 5.0, "Purple", "Orange");
+        System.out.println("ТРЕУГОЛЬНИК:\n"+"Периметр треугольника:\t " + triangle.getPerimeter() +"\nПлощадь треугольника: \t" + triangle.getArea()+ "\nЦвет фигуры: \t" +triangle.getColor()+"\nЦвет границы фигуры: \t"+ triangle.getBorderColor()+"\n");
+
+
+
+
+
+
     }
 }
