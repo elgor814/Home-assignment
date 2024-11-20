@@ -1,6 +1,6 @@
-class MyArraySizeExceptions extends Exception {
+class MyArraySizeException extends Exception {
 
-    public MyArraySizeExceptions(String message) {  // Конструктор для передачи сообщения об ошибке
+    public MyArraySizeException(String message) {  // Конструктор для передачи сообщения об ошибке
         super(message);
     }
 }
